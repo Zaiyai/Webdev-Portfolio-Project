@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GROUPNAME Portfolio</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&display=swap');
+
+        * {
+            font-family: "Libertinus Serif Display", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+        }
+
         body {
-            background-color:paleturquoise
+            background-color:#633514;
+            margin: 0;
         }
 
         ul {
             list-style-type: none;
             display: grid;
             grid-template-columns: auto auto auto;
-            justify-content: center;
+        }
+
+        li {
+            text-align: center;
         }
 
         li > * {
@@ -24,36 +37,57 @@
             padding: 5px;
             background-color: turquoise;
             border-radius: 10px;
-            margin: 14vw
         }
 
         .container {
             text-align: center;
+            margin: 0
         }
 
         .line {
             border-bottom: 2px solid black;
             width: 50%;
             margin: auto;
+            margin-top: 20px;
             margin-bottom: 20px;
+        }
+
+        #portfolio-header {
+            background-image: url('./images/map background.jpg');
+            width: 100vw;
+            height: 50vh;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: multiply;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        #introduction {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 10vw;
         }
      </style>
 </head>
 <body>
+    <div class="container" id="portfolio-header">
+        <H1>MY TRAVEL PORTFOLIO</H1>
+    </div>
     <div class="container">
-        <H1>TRAVEL PORTFOLIO</H1>
         <div class="line"></div>
 
-        <img src="./Images/Map Aesthetic.jpg" alt="Map Aesthetic" width="300px" height="400px">
-
-        <p><b>Welcome to my travel portfolio!</b><br>Here, you can find my</p>
-        <nav>
+        <h2><b>Welcome to my travel portfolio!</b></h2>
+            
+        <p id="introduction">Here, you can learn about me and the places I have travelled. Enjoy your stay!</p>
+    </div>
+    <nav>
             <ul>
                 <li><a href="about.html">About me</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </div>
 </body>
 </html>

@@ -4,12 +4,17 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
+        
         {
             "type": "chrome",
             "request": "launch",
+<<<<<<< HEAD
             "name": "Open contact.html",
             "file": "c:\\Users\\Sonia\\Webdev-Portfolio-Project\\index.html"
+=======
+            "name": "Open gallery.html",
+            "file": "C:\\Users\\Edrian\\WebDev Portfolio Project\\index.html"
+>>>>>>> 86f8f752ae3c2886204e5fd4dc213fef35aa12d9
         }
     ]
 }
