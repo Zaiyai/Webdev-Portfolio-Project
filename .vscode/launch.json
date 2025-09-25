@@ -6,11 +6,16 @@
     "configurations": [
         
         {
-            "type": "chrome",
+            "type": "firefox",
             "request": "launch",
+<<<<<<< HEAD
             "name": "Open contact.html",
             "file": "c:\\Users\\Sonia\\Webdev-Portfolio-Project\\index.html"
 
+=======
+            "name": "Open gallery.html",
+            "file": "C:\\Users\\Edrian\\WebDev Portfolio Project\\index.html"
+>>>>>>> 69e5f0fadf886c980a44c15bed1191d56e24b067
         }
     ]
 }
