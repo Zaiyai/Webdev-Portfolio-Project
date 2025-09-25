@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GROUPNAME Portfolio</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&display=swap');
+
+        * {
+            font-family: "Libertinus Serif Display", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
         body {
-            background-color:paleturquoise
+            background-color:paleturquoise;
+            margin: 0;
         }
 
         ul {
@@ -35,16 +44,30 @@
             border-bottom: 2px solid black;
             width: 50%;
             margin: auto;
+            margin-top: 20px;
             margin-bottom: 20px;
+        }
+
+        #portfolio-header {
+            background-image: url('./images/map background.jpg');
+            width: 100vw;
+            height: 50vh;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: multiply;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
         }
      </style>
 </head>
 <body>
+    <div class="container" id="portfolio-header">
+        <H1>MY TRAVEL PORTFOLIO</H1>
+    </div>
     <div class="container">
-        <H1>TRAVEL PORTFOLIO</H1>
         <div class="line"></div>
-
-        <img src="./Images/Map Aesthetic.jpg" alt="Map Aesthetic" width="300px" height="400px">
 
         <p><b>Welcome to my travel portfolio!</b><br>Here, you can find my</p>
         <nav>

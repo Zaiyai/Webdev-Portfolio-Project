@@ -6,10 +6,10 @@
     "configurations": [
         
         {
-            "type": "chrome",
+            "type": "firefox",
             "request": "launch",
             "name": "Open gallery.html",
-            "file": "c:\\Users\\Sonia\\Webdev-Portfolio-Project\\gallery.html"
+            "file": "C:\\Users\\Edrian\\WebDev Portfolio Project\\index.html"
         }
     ]
 }
