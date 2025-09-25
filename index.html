@@ -12,6 +12,7 @@
             font-weight: 400;
             font-style: normal;
             color: white;
+            margin-left: 0
         }
 
         body {
@@ -19,24 +20,30 @@
             margin: 0;
         }
 
+        nav {
+            margin: 0;
+        }
+
         ul {
+            margin: 0;
             list-style-type: none;
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 0;
         }
 
         li {
             text-align: center;
+            background-color: #633514;
+            padding: 15px;
         }
 
         li > * {
             text-decoration: none;
-            color: black;
+            font-size: large;
+            color: white;
             text-shadow: 1px 1px 1px gray;
-            border: 1px solid black;
-            padding: 5px;
-            background-color: turquoise;
-            border-radius: 10px;
+            padding: 15px;
         }
 
         .container {
@@ -50,6 +57,10 @@
             margin: auto;
             margin-top: 20px;
             margin-bottom: 20px;
+        }
+
+        .active {
+            background-color: #402009;
         }
 
         #portfolio-header {
@@ -72,6 +83,15 @@
      </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="container" id="portfolio-header">
         <H1>MY TRAVEL PORTFOLIO</H1>
     </div>
@@ -82,12 +102,5 @@
             
         <p id="introduction">Here, you can learn about me and the places I have travelled. Enjoy your stay!</p>
     </div>
-    <nav>
-        <ul>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 </body>
 </html>

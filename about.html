@@ -5,54 +5,68 @@
     <title>About Me - My Travel Blog</title>
 </head>
 <style>
+    
         @import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&display=swap');
 
         body {
             background-color:#633514;
-            margin: 10px;
+            margin: 0;
             color:white;
         }
 
         nav {
-            margin-top: 30vh;
+            margin: 0;
         }
 
-     ul {
+        ul {
+            margin: 0;
             list-style-type: none;
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 0;
         }
 
         li {
             text-align: center;
+            background-color: #633514;
+            padding: 15px;
         }
 
         li > * {
             text-decoration: none;
-            color: black;
+            font-size: large;
+            color: white;
             text-shadow: 1px 1px 1px gray;
-            border: 1px solid black;
-            padding: 5px;
-            background-color: turquoise;
-            border-radius: 10px;
+            padding: 15px;
         }
 
         p {
             text-indent: 2em;
         }
+
+        .active {
+            background-color: #402009;
+        }
+
+        .container {
+            margin: 10px
+        }
 </style>
 <body>
-    <h1>About Me</h1>
-    <p> Hi, the name's Aaron, just your regular 20-year-old student from the Philippines. My family likes to bring us around our country. Overtime I developed a love for photography as a hobby, turning the moments when we travel into opportunities that I save with beautiful photos.
- <strong>Travel isn't just a hobby for me, It is a way to grow and connect with the world.</strong></p>
-    <p>I've inherited my mother's love for nature, always taking photos of locations with beautiful landscapes and views. I especially remember my fond memories of finding just the right angles for the flowers on top of Tagaytay or even the majestic ocean-beach views of Siargao. For those who take pictures of their travels, they know that photos invoke the memories and the feelings from that moment, it reminds us of the wonderful journey it takes to get to those locations. Maybe one day I'll be able to experience traveling the world.</p>
-    
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About me</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <div class="container">
+        <h1>About Me</h1>
+    <p> Hi, the name's Aaron, just your regular 20-year-old student from the Philippines. My family likes to bring us around our country. Overtime I developed a love for photography as a hobby, turning the moments when we travel into opportunities that I save with beautiful photos.
+ <strong>Travel isn't just a hobby for me, It is a way to grow and connect with the world.</strong></p>
+    <p>I've inherited my mother's love for nature, always taking photos of locations with beautiful landscapes and views. I especially remember my fond memories of finding just the right angles for the flowers on top of Tagaytay or even the majestic ocean-beach views of Siargao. For those who take pictures of their travels, they know that photos invoke the memories and the feelings from that moment, it reminds us of the wonderful journey it takes to get to those locations. Maybe one day I'll be able to experience traveling the world.</p>
+    </div>
 </body>
 </html>

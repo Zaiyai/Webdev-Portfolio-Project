@@ -5,71 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <style>
-<<<<<<< HEAD
-    body {
+body {
             background-color:#633514;
-            margin: 10px;
-            color:white;
-    }
+            margin: 0;
+            color: white
+        }
 
-     ul {
+        nav {
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
             list-style-type: none;
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 0;
         }
 
         li {
-=======
-        body {
-            background-color: #633514;
-            margin: 0;
-            font-family: Tahoma, sans-serif;
->>>>>>> fac877960361b5ecdb636b3f4df651a0c349a6d9
             text-align: center;
+            background-color: #633514;
+            padding: 15px;
         }
 
-        /* Contact box */
-        .contact-box {
-            border: 2px solid black;
-            border-radius: 8px;
-            background-color: #f75c03;
-            padding: 20px;
-            margin: 20px auto;
-            width: 300px;
-        }
-
-        /* Navigation styling */
-        nav {
-            margin-top: 20px;
-        }
-
-        nav a {
+        li > * {
             text-decoration: none;
+            font-size: large;
             color: white;
-            background-color: orange;
-            padding: 10px 15px;
-            border-radius: 8px;
-            margin: 5px;
-            display: inline-block;
+            text-shadow: 1px 1px 1px gray;
+            padding: 15px;
+        }
+
+        .container {
+            margin: 10px
+        }
+
+        .active {
+            background-color: #402009;
+        }
+
+        .contact-box {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px gray;
+            background-color: #402009;
         }
     </style>
 </head>
 <body>
-    <div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
         <h1>Contact Me</h1>
         <div class="contact-box">
-            <p>Email Address: angclonepips@gmail.com</p>
-            <p>Phone: 09212910660</p>
+            <p>Email Address: <a href="mailto:angclonepips@gmail.com">angclonepips@gmail.com</a></p>
+            <p>Phone: <a href="tel:09212910660">09212910660</a></p>
         </div>
-    </div>
-
-    <div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
     </div>
 </body>
 </html>
