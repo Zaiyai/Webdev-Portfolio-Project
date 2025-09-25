@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <style>
-    ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: center; /* centers the nav bar */
-        gap: 20px; /* space between items */
-        padding: 0;
-    }
+    
 
-    li > a {
-        text-decoration: none;
-        color: black;
-        text-shadow: 1px 1px 1px gray;
-        border: 1px solid black;
-        padding: 10px 20px;
-        background-color: turquoise;
-        border-radius: 10px;
-    }
+     ul {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        li {
+            text-align: center;
+        }
+
+        li > * {
+            text-decoration: none;
+            color: black;
+            text-shadow: 1px 1px 1px gray;
+            border: 1px solid black;
+            padding: 5px;
+            background-color: turquoise;
+            border-radius: 10px;
+        }
 </style>
 
 </head>
@@ -34,11 +38,7 @@
     <ul>
         <li><a href="about.html">About me</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-<<<<<<< HEAD
-=======
-        <li><a href="contact.html">Contact</a></li>
->>>>>>> 86f8f752ae3c2886204e5fd4dc213fef35aa12d9
-        <li><a href="index.html">Index</a></li>
+        <li><a href="index.html">Home</a></li>
     </ul>
     </nav>
 </body>
